@@ -60,25 +60,25 @@ GITHUB_BASE_URL="https://raw.githubusercontent.com/vilhelmprytz/pterodactyl-inst
 COLOR_RED='\033[0;31m'
 COLOR_NC='\033[0m'
 
-INSTALL_MARIADB=false
+INSTALL_MARIADB=true
 
 # firewall
-CONFIGURE_FIREWALL=false
-CONFIGURE_UFW=false
-CONFIGURE_FIREWALL_CMD=false
+CONFIGURE_FIREWALL=true
+CONFIGURE_UFW=true
+CONFIGURE_FIREWALL_CMD=true
 
 # SSL (Let's Encrypt)
-CONFIGURE_LETSENCRYPT=false
+CONFIGURE_LETSENCRYPT=true
 FQDN=""
-EMAIL=""
+EMAIL="sayyedzaid239@gmail.com"
 
 # Database host
-CONFIGURE_DBHOST=false
-CONFIGURE_DBEXTERNAL=false
+CONFIGURE_DBHOST=true
+CONFIGURE_DBEXTERNAL=true
 CONFIGURE_DBEXTERNAL_HOST="%"
-CONFIGURE_DB_FIREWALL=false
-MYSQL_DBHOST_USER="pterodactyluser"
-MYSQL_DBHOST_PASSWORD="password"
+CONFIGURE_DB_FIREWALL=true
+MYSQL_DBHOST_USER="groot"
+MYSQL_DBHOST_PASSWORD="groot"
 
 # regex for email input
 regex="^(([A-Za-z0-9]+((\.|\-|\_|\+)?[A-Za-z0-9]?)*[A-Za-z0-9]+)|[A-Za-z0-9]+)@(([A-Za-z0-9]+)+((\.|\-|\_)?([A-Za-z0-9]+)+)*)+\.([A-Za-z]{2,})+$"
